@@ -1,0 +1,15 @@
+ [
+    {
+      "id": 1,
+      "name": "BrustS",
+      "email": "brust88@mail.ru",
+      "password": "123"
+    },
+    {
+      "id": 2,
+      "name": "Admin",
+      "email": "admin@admin.com",
+      "password": "111"
+    }
+]
+

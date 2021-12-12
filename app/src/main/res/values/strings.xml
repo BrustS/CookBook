@@ -8,4 +8,17 @@
     <string name="e_mail">E-mail</string>
     <string name="ingredients">Ingredients:</string>
     <string name="ooking_recipe">Сooking recipe:</string>
+    <string name="profile">Profile</string>
+    <string name="favorite">Favorite</string>
+    <string name="recipes">Recipes</string>
+    <string name="title">Title</string>
+    <string name="description">Description</string>
+    <string name="registration_form">Registration Form</string>
+    <string name="enter_email">Enter Email:</string>
+    <string name="enter_your_name">Enter Your Name:</string>
+    <string name="enter_password">Enter Password:</string>
+    <string name="name">Name</string>
+    <string name="confirm_password">Confirm Password:</string>
+    <string name="back">Back</string>
+    <string name="add_user">Add User</string>
 </resources>
