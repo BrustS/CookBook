@@ -55,6 +55,6 @@ class LocalDataImpl(private val context: Context) : LocalData {
 
         val json = jsonAdapter.toJson(user)
 
-
+        return true
     }
 }
