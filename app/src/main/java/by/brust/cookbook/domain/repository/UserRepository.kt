@@ -6,7 +6,7 @@ import by.brust.cookbook.domain.models.LoginigUser
 
 interface UserRepository {
     suspend fun getUser(email:String, password: String) : LoginigUser?
-    fun addUser(user: User): Boolean
+    suspend fun addUser(user: User)
     fun saveUser(user:SavedUser)
     fun checkUser():SavedUser
     fun logoutUser(): Boolean

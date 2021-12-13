@@ -5,7 +5,7 @@ import by.brust.cookbook.domain.repository.UserRepository
 import javax.inject.Inject
 
 class RegistrationUserUseCase @Inject constructor(private val userRepository: UserRepository) {
-    fun execute(user: User): Boolean {
+   suspend fun execute(user: User) {
         return userRepository.addUser(user)
     }
 }

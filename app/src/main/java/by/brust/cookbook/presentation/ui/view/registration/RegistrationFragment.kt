@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.viewModels
 import by.brust.cookbook.R
+import by.brust.cookbook.data.models.User
 import by.brust.cookbook.databinding.FragmentProfileBinding
 import by.brust.cookbook.databinding.FragmentRegistrationBinding
 import dagger.hilt.android.AndroidEntryPoint
@@ -25,7 +26,12 @@ class RegistrationFragment : Fragment() {
         _binding = FragmentRegistrationBinding.inflate(inflater, container, false)
 
     binding.AddUserButton.setOnClickListener {
-
+        val user = User(
+            name = binding.nameEditText.text.toString(),
+            email = binding.emailEditText.text.toString(),
+            password = binding.passwordEditText.text.toString()
+        )
+        viewModel.add(user)
 }
         return binding.root
     }

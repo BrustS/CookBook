@@ -12,7 +12,6 @@ import com.squareup.moshi.Types
 import com.squareup.moshi.adapter
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
 
-@ExperimentalStdlibApi
 class LocalDataImpl(private val context: Context) : LocalData {
 
     val sharedPreferences = context.getSharedPreferences(Constants.SHARED_PREFS_NAME, Context.MODE_PRIVATE)
@@ -49,12 +48,6 @@ class LocalDataImpl(private val context: Context) : LocalData {
     }
 
     override fun addUser(user: User): Boolean {
-//        val json = context.assets.open("users.json")
-        val moshi = Moshi.Builder() .addLast(KotlinJsonAdapterFactory()).build()
-        val jsonAdapter: JsonAdapter<User> = moshi.adapter<User>()
-
-        val json = jsonAdapter.toJson(user)
-
-        return true
+        TODO("Not yet implemented")
     }
 }

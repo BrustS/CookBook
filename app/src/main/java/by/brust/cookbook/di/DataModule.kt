@@ -3,6 +3,9 @@ package by.brust.cookbook.di
 import android.content.Context
 import by.brust.cookbook.data.repository.RecipeRepositoryImpl
 import by.brust.cookbook.data.repository.UserRepositoryImpl
+import by.brust.cookbook.data.storage.remote.RemoteData
+import by.brust.cookbook.data.storage.remote.RemoteDataImpl
+import by.brust.cookbook.data.storage.remote.UserAPI
 import by.brust.cookbook.domain.repository.RecipeRepository
 import by.brust.cookbook.domain.repository.UserRepository
 import by.brust.finaltask.data.repository.LocalData
@@ -26,8 +29,14 @@ class DataModule {
 
     @Provides
     @Singleton
-    fun provideUserRepository(localData: LocalData): UserRepository{
-        return UserRepositoryImpl(localData)
+    fun provideRemoteData(userAPI: UserAPI): RemoteData{
+        return RemoteDataImpl(userAPI)
+    }
+
+    @Provides
+    @Singleton
+    fun provideUserRepository(localData: LocalData, remoteData: RemoteData): UserRepository{
+        return UserRepositoryImpl(localData, remoteData)
     }
 
     @Provides
