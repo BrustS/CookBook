@@ -28,9 +28,13 @@
     </fragment>
     <fragment
         android:id="@+id/detailRecipeFragment"
-        android:name="by.brust.cookbook.presentation.ui.DetailRecipeFragment"
+        android:name="by.brust.cookbook.presentation.ui.view.detail.DetailRecipeFragment"
         android:label="fragment_detail_recipe"
-        tools:layout="@layout/fragment_detail_recipe" />
+        tools:layout="@layout/fragment_detail_recipe" >
+        <argument
+            android:name="recipe"
+            app:argType="by.brust.cookbook.data.models.Recipe" />
+    </fragment>
     <fragment
         android:id="@+id/registrationFragment"
         android:name="by.brust.cookbook.presentation.ui.view.registration.RegistrationFragment"

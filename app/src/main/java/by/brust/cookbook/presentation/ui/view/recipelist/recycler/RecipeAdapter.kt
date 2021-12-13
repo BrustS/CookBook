@@ -1,12 +1,13 @@
 package by.brust.cookbook.presentation.ui.view.recipelist.recycler
 
-import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import by.brust.cookbook.data.models.Recipe
 import by.brust.cookbook.databinding.FragmentItemBinding
-import coil.load
+import by.brust.cookbook.presentation.ui.view.recipelist.RecipeFragmentDirections
+import com.bumptech.glide.Glide
 
 
 class RecipeAdapter(private val recipes_list: List<Recipe>) : RecyclerView.Adapter<RecipeAdapter.RecipeViewHolder>() {
@@ -17,8 +18,12 @@ class RecipeAdapter(private val recipes_list: List<Recipe>) : RecyclerView.Adapt
         fun bind(recipe: Recipe) {
             binding.apply {
                 titleRecipeTextView.text = recipe.title
-                recipeImage.load(recipe.imageurl)
+                Glide.with(binding.root).load(recipe.imageurl).into(binding.recipeImage)
                 shortDescriptionRecipeTextView.text = recipe.shortdescription
+            }
+            binding.root.setOnClickListener {
+                val action = RecipeFragmentDirections.actionRecipeFragmentToDetailRecipeFragment(recipe)
+                it.findNavController().navigate(action)
             }
         }
     }
