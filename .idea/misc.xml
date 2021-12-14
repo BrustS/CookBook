@@ -6,6 +6,7 @@
         <entry key="app/src/main/res/drawable/background_selector.xml" value="0.172" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.38095238095238093" />
         <entry key="app/src/main/res/layout/fragment_detail_recipe.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_favorite.xml" value="0.33645833333333336" />
         <entry key="app/src/main/res/layout/fragment_item.xml" value="0.5" />
         <entry key="app/src/main/res/layout/fragment_item_list.xml" value="0.18" />
         <entry key="app/src/main/res/layout/fragment_login.xml" value="0.22" />
