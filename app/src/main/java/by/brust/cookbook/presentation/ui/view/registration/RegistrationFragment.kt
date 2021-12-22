@@ -6,6 +6,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.viewModels
+import androidx.navigation.fragment.NavHostFragment
+import androidx.navigation.fragment.findNavController
 import by.brust.cookbook.R
 import by.brust.cookbook.data.models.User
 import by.brust.cookbook.databinding.FragmentProfileBinding
@@ -33,6 +35,11 @@ class RegistrationFragment : Fragment() {
         )
         viewModel.add(user)
 }
+        binding.BackButton.setOnClickListener {
+            NavHostFragment.findNavController(this)
+                .navigate(R.id.action_registrationFragment_to_loginFragment)
+        }
+
         return binding.root
     }
 }

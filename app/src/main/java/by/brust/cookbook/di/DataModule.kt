@@ -3,6 +3,7 @@ package by.brust.cookbook.di
 import android.content.Context
 import by.brust.cookbook.data.repository.RecipeRepositoryImpl
 import by.brust.cookbook.data.repository.UserRepositoryImpl
+import by.brust.cookbook.data.storage.local.room.FavoriteRecipeDatabase
 import by.brust.cookbook.data.storage.remote.RemoteData
 import by.brust.cookbook.data.storage.remote.RemoteDataImpl
 import by.brust.cookbook.data.storage.remote.UserAPI

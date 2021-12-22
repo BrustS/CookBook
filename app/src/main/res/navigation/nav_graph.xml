@@ -43,6 +43,9 @@
         <action
             android:id="@+id/action_registrationFragment_to_recipeFragment"
             app:destination="@id/recipeFragment" />
+        <action
+            android:id="@+id/action_registrationFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
     </fragment>
     <fragment
         android:id="@+id/profileFragment"
@@ -52,5 +55,17 @@
         <action
             android:id="@+id/action_profileFragment_to_loginFragment"
             app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/favoriteFragment"
+        android:name="by.brust.cookbook.presentation.ui.view.favoritelist.FavoriteFragment"
+        android:label="fragment_favorite"
+        tools:layout="@layout/fragment_favorite" >
+        <action
+            android:id="@+id/action_favoriteFragment_to_detailRecipeFragment"
+            app:destination="@id/detailRecipeFragment" />
+        <argument
+            android:name="recipe"
+            app:argType="by.brust.cookbook.data.models.FavoriteRecipe" />
     </fragment>
 </navigation>

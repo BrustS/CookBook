@@ -7,10 +7,11 @@
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.38095238095238093" />
         <entry key="app/src/main/res/layout/fragment_detail_recipe.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_favorite.xml" value="0.33645833333333336" />
+        <entry key="app/src/main/res/layout/fragment_favoriteitem.xml" value="0.33541666666666664" />
         <entry key="app/src/main/res/layout/fragment_item.xml" value="0.5" />
         <entry key="app/src/main/res/layout/fragment_item_list.xml" value="0.18" />
         <entry key="app/src/main/res/layout/fragment_login.xml" value="0.22" />
-        <entry key="app/src/main/res/layout/fragment_profile.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_profile.xml" value="0.18" />
         <entry key="app/src/main/res/layout/fragment_recipes_list.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_registration.xml" value="0.33" />
         <entry key="app/src/main/res/menu/bottom_navigation_menu.xml" value="0.18645833333333334" />

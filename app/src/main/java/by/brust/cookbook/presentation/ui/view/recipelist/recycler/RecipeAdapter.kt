@@ -4,6 +4,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
+import by.brust.cookbook.data.models.FavoriteRecipe
 import by.brust.cookbook.data.models.Recipe
 import by.brust.cookbook.databinding.FragmentItemBinding
 import by.brust.cookbook.presentation.ui.view.recipelist.RecipeFragmentDirections

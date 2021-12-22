@@ -40,4 +40,10 @@ class DomainModule {
     fun provideRegistrationUserUseCase(userRepository: UserRepository): RegistrationUserUseCase{
         return RegistrationUserUseCase(userRepository)
     }
+
+    @Provides
+    @Singleton
+    fun provideDeleteRecipeFromFavoriteUseCase(recipeRepository: RecipeRepository): DeleteRecipeFromFavoriteUseCase {
+        return DeleteRecipeFromFavoriteUseCase(recipeRepository)
+    }
 }

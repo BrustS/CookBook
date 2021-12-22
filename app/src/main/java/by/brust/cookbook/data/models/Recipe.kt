@@ -5,6 +5,7 @@ import android.os.Parcelable
 import com.squareup.moshi.Json
 import com.squareup.moshi.JsonClass
 import kotlinx.parcelize.Parcelize
+import java.util.*
 
 @JsonClass(generateAdapter = false)
 @Parcelize

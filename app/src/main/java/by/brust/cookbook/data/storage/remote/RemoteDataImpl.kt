@@ -5,7 +5,7 @@ import javax.inject.Inject
 
 class RemoteDataImpl @Inject constructor(private val userAPI: UserAPI): RemoteData {
     override suspend fun getUsers(): List<User> {
-        return userAPI.getUsers().list
+        return userAPI.getUsers()
     }
 
     override suspend fun addUser(user: User) {

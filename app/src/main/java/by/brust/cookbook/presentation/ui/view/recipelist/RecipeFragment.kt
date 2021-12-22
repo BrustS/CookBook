@@ -20,8 +20,6 @@ private val binding get() = _binding!!
 @AndroidEntryPoint
 class RecipeFragment : Fragment() {
 
-
-
     val viewModel: MainViewModel by viewModels()
 
     override fun onCreateView(
@@ -38,24 +36,8 @@ class RecipeFragment : Fragment() {
 
         val navController = findNavController(this)
         binding.bottomNavigationView.setupWithNavController(navController)
-
-        binding.recyclerView.setOnClickListener {
-
-        }
-
-//        val catAdapter = CatAdapter(object : CatAdapter.OnImageClickListener {
-//            override fun onItemClick(image: Cat) {
-//                val action = CatsFragmentDirections.actionCatsFragmentToDetailCatFragment(image)
-//                findNavController().navigate(action)
-//            }
-//        })
-
         return binding.root
     }
-
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-            }
 
     override fun onDestroy() {
         super.onDestroy()

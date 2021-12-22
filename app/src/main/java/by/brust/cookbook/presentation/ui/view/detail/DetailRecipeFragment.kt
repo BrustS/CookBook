@@ -38,6 +38,7 @@ class DetailRecipeFragment : Fragment() {
 
         binding.favoriteAddButton.setOnClickListener{
             Toast.makeText(requireContext(), "Recipe added!", Toast.LENGTH_SHORT).show()
+            viewModel.addRecipeToFavorite()
         }
     }
 

@@ -10,6 +10,18 @@
       "name": "Admin",
       "email": "admin@admin.com",
       "password": "111"
-    }
+    },
+   {
+     "id": 3,
+     "name": "1",
+     "email": "1@1.com",
+     "password": "1111"
+   },
+   {
+     "id": 4,
+     "name": "1",
+     "email": "1",
+     "password": "1"
+   }
 ]
 

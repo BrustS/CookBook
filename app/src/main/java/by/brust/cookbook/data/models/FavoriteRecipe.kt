@@ -5,12 +5,13 @@ import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 import kotlinx.parcelize.Parcelize
+import java.util.*
 
 @Parcelize
 @Entity(tableName = "favorite_recipe_table")
 data class FavoriteRecipe(
     @PrimaryKey(autoGenerate = true)
-    val id: Int = 0,
+    val id: Int = 1,
     @ColumnInfo(name = "title")
     val title: String = "",
     @ColumnInfo(name = "imageurl")

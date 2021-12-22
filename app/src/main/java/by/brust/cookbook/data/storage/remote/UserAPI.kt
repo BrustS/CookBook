@@ -11,10 +11,10 @@ interface UserAPI {
         const val BASE_URL = "http://my-json-server.typicode.com/"
     }
 
-    @GET("BrustS/server/v1")
-    suspend fun getUsers() : UserData
+    @GET("BrustS/Json-server/users")
+    suspend fun getUsers() : List<User>
 
-    @POST("BrustS/server/v1")
+    @POST("BrustS/Json-server/users")
     suspend fun addUser(
         @Body user: User)
 }

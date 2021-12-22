@@ -12,7 +12,7 @@
     <string name="favorite">Favorite</string>
     <string name="recipes">Recipes</string>
     <string name="title">Title</string>
-    <string name="description">Description</string>
+    <string name="description">Description none</string>
     <string name="registration_form">Registration Form</string>
     <string name="enter_email">Enter Email:</string>
     <string name="enter_your_name">Enter Your Name:</string>
@@ -21,4 +21,8 @@
     <string name="confirm_password">Confirm Password:</string>
     <string name="back">Back</string>
     <string name="add_user">Add User</string>
+    <string name="user_name">User Name:</string>
+    <string name="user_email">User email:</string>
+    <string name="logout">Logout</string>
+    <string name="user_favorite_recipes">User Favorite Recipes</string>
 </resources>
