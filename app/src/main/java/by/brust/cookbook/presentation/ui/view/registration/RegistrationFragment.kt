@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.fragment.findNavController
@@ -34,6 +35,7 @@ class RegistrationFragment : Fragment() {
             password = binding.passwordEditText.text.toString()
         )
         viewModel.add(user)
+        Toast.makeText(requireContext()," User added!", Toast.LENGTH_SHORT).show()
 }
         binding.BackButton.setOnClickListener {
             NavHostFragment.findNavController(this)

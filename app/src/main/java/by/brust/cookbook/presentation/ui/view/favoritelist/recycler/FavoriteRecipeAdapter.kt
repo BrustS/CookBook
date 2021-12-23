@@ -51,7 +51,6 @@ class FavoriteRecipeAdapter: ListAdapter<FavoriteRecipe, FavoriteRecipeViewHolde
                binding.apply {
                    titleRecipeTextView.text = favoriterecipe.title
                    Glide.with(binding.root).load(favoriterecipe.imageurl).into(binding.recipeImage)
-                   shortDescriptionRecipeTextView.text = favoriterecipe.shortdescription
                }
                binding.root.setOnClickListener {
                    val recipe = favoriterecipe.ToRecipe()

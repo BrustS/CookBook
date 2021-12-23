@@ -14,8 +14,6 @@ class FavoriteViewModel @Inject constructor(private val recipeRepository: Recipe
 
      lateinit var recipeList: LiveData<List<FavoriteRecipe>>
 
-
-
     init {
         viewModelScope.launch {
             recipeRepository.getFavoriteRecipe().let{
